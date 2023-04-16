@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Recommendation App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Movie Recommendation App</h1>
+  <div class="user-input-form">
+
+<label for="genre-select">Select Genre:</label>
+<select id="genre-select">
+  <option value="action">Action</option>
+  <option value="comedy">Comedy</option>
+  <option value="drama">Drama</option>
+  <option value="thriller">Thriller</option>
+  <option value="romance">Romance</option>
+  
+Adventure
+
+Crime
+
+Fantasy
+Horror
+Mystery
+Romance
+Science Fiction
+
+War
+Western
+Animation
+Family
+Documentary
+Musical
+Sports
+Historical
+Biographical
+
+</select>
+
+    <br>
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" min="1" max="10">
+    <br>
+    <label for="release-year">Release Year:</label>
+    <input type="number" id="release-year" min="1900" max="2023">
+    <br>
+    <button onclick="getMovieRecommendations()">Get Recommendations</button>
+  </div>
+  <div class="movie-list" id="movie-list"></div>
+  <script src="app.js"></script>
+</body>
+</html>
